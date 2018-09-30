@@ -1,0 +1,7 @@
+const ADD_MESSAGE = 'ADD_MESSAGE';
+const URL_INPUT_TEXT = 'URL_INPUT_TEXT';
+
+export {
+    ADD_MESSAGE,
+    URL_INPUT_TEXT
+};
