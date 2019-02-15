@@ -2,7 +2,7 @@ import React from 'react';
 
 const Main = props => <div>
     <input name="url"
-        placeholder="video url"
+        placeholder="create message"
         onChange={
             ev => props.changeUrlInput(ev)
         } />
@@ -13,9 +13,12 @@ const Main = props => <div>
                 level: 'info',
                 text: `pushed button`
             })
-            
+
         }
     }>send</button>
+    <ul>
+        {props.messages.map(message => <li>{message.text}</li>)}
+    </ul>
 </div>
 
 export default Main;
