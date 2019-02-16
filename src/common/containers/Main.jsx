@@ -17,7 +17,7 @@ const Main = props => <div>
         }
     }>send</button>
     <ul>
-        {props.messages.map(message => <li>{message.text}</li>)}
+        {props.messages.map((message, i) => <li key={i}>{message.text}</li>)}
     </ul>
 </div>
 
