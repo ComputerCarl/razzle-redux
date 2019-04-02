@@ -15,7 +15,10 @@ const mapStateToProps = state => ({
 
 // https://github.com/reduxjs/redux/issues/363
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ ...messagesActions, ...downloaderActions }, dispatch);
+  return bindActionCreators({
+    ...messagesActions,
+    ...downloaderActions
+  }, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Main);

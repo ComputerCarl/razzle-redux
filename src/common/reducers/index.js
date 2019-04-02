@@ -3,10 +3,7 @@ import { combineReducers } from 'redux';
 import messages from './messages';
 import downloader from './downloader';
 
-const rootReducer = combineReducers({
+export default combineReducers({
   messages,
   downloader
 });
-
-export default rootReducer;
-
