@@ -12,6 +12,10 @@ import { addMessage } from '../common/actions/messages';
 // import sitemap from 'express-sitemap';
 // import { renderToString } from 'react-dom/server';
 
+// load the .env settings into process.env
+require('dotenv').config()
+
+
 const ReactCC = require("react-component-caching");
 const componentCache = new ReactCC.ComponentCache();
 const debug = require('debug')('SSR');

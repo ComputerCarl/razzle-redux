@@ -1,4 +1,5 @@
 import express from 'express';
+require('dotenv').config()
 
 let app = require('./server').default;
 
@@ -14,6 +15,7 @@ if (module.hot) {
   console.info('✅  Server-side HMR Enabled!');
 }
 
+//should be ruled by .env
 const port = process.env.PORT || 3000;
 
 export default express()
@@ -23,5 +25,5 @@ export default express()
       console.error(err);
       return;
     }
-    console.log(`> Started on port ${port}`);
+    console.log(`> Listening at http://localhost:${port}`);
   });
